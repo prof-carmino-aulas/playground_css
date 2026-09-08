@@ -1,0 +1,30 @@
+/*
+=========================================================
+ARQUIVO: page-header.css
+RESPONSABILIDADE:
+Define o cabeçalho interno das páginas ou seções.
+
+BEM:
+- .page-header        -> Block
+- .page-header__title -> Element
+
+O nome composto do Block utiliza hífen:
+page-header
+
+A relação Block/Element continua sendo indicada por:
+page-header__title
+=========================================================
+*/
+
+.page-header {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.page-header__title {
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: #111827;
+  font-size: 1.6rem;
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+/*
+=========================================================
+ARQUIVO: responsive.css
+RESPONSABILIDADE:
+Centraliza regras responsivas da aplicação.
+
+Este arquivo modifica Blocks já definidos em outros
+arquivos quando a largura da tela é menor que 900px.
+
+BEM continua sendo respeitado porque os mesmos nomes
+de classes dos componentes são utilizados. O media
+query altera apenas sua apresentação em outro contexto
+de viewport.
+=========================================================
+*/
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .product-list__grid {
+    grid-template-columns: 1fr;
+  }
+}

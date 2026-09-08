@@ -1,0 +1,52 @@
+/*
+=========================================================
+ARQUIVO: sidebar.css
+RESPONSABILIDADE:
+Define a barra lateral e a área de etapas de navegação.
+
+BEM:
+- .sidebar        -> Block
+- .sidebar__title -> Element
+- .sidebar__text  -> Element
+
+.steps é tratado como um Block independente, pois pode
+organizar uma sequência de botões sem depender
+estruturalmente do componente .sidebar.
+
+Exemplo:
+<aside class="sidebar">
+  <h2 class="sidebar__title">Etapas</h2>
+  <p class="sidebar__text">Selecione uma etapa.</p>
+  <div class="steps">...</div>
+</aside>
+=========================================================
+*/
+
+.sidebar {
+  position: sticky;
+  top: 24px;
+  padding: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(17, 24, 39, 0.08);
+}
+
+.sidebar__title {
+  margin: 0 0 12px 0;
+  color: #111827;
+  font-size: 1.1rem;
+}
+
+.sidebar__text {
+  margin: 0 0 16px 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

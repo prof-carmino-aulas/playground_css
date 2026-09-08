@@ -1,0 +1,75 @@
+/*
+=========================================================
+ARQUIVO: explanation.css
+RESPONSABILIDADE:
+Define caixas explicativas, títulos auxiliares, blocos
+de código e imagens usadas no conteúdo didático.
+
+BEM:
+- .explanation        -> Block
+- .explanation__title -> Element
+- .explanation__text  -> Element
+
+As classes .section-title, .code-block, .content-image
+e .mock__image são utilitárias ou pertencem a outros
+componentes específicos do projeto.
+
+Exemplo:
+<div class="explanation">
+  <h3 class="explanation__title">Conceito</h3>
+  <p class="explanation__text">Explicação...</p>
+</div>
+=========================================================
+*/
+
+.explanation {
+  margin-bottom: 18px;
+  padding: 18px;
+  border-left: 5px solid #3730a3;
+  border-radius: 12px;
+  background-color: #eef2ff;
+}
+
+.explanation__title {
+  margin: 0;
+  color: #111827;
+  font-size: 1.2rem;
+}
+
+.explanation__text {
+  margin: 8px 0 0 0;
+  color: #374151;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.section-title {
+  margin: 0;
+  color: #111827;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.code-block {
+  margin-top: 16px;
+  padding: 20px;
+  overflow-x: auto;
+  border-radius: 12px;
+  background-color: #020617;
+  color: #f8fafc;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.content-image,
+.mock__image {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 16px auto 0;
+  border-radius: 12px;
+}

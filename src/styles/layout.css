@@ -1,0 +1,30 @@
+/*
+=========================================================
+ARQUIVO: layout.css
+RESPONSABILIDADE:
+Define a organização estrutural das principais áreas
+da interface.
+
+BEM:
+Neste caso, .layout e .preview funcionam como Blocks
+estruturais independentes.
+
+Se o preview fosse obrigatoriamente uma parte interna
+de layout, uma alternativa BEM seria:
+.layout__preview
+
+A escolha atual preserva a possibilidade de reutilizar
+.preview fora do componente .layout.
+=========================================================
+*/
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.preview {
+  min-height: 560px;
+}

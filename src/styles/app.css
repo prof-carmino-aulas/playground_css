@@ -1,0 +1,27 @@
+/*
+=========================================================
+ARQUIVO: app.css
+RESPONSABILIDADE:
+Define a estrutura visual principal da aplicação.
+
+BEM:
+- .app              -> Block (bloco principal da aplicação)
+- .app__container   -> Element (elemento interno pertencente ao bloco .app)
+
+Exemplo:
+<div class="app">
+  <div class="app__container">...</div>
+</div>
+=========================================================
+*/
+
+.app {
+  min-height: 100vh;
+  padding: 28px;
+  background-color: #eef2f7;
+}
+
+.app__container {
+  max-width: 1180px;
+  margin: 0 auto;
+}

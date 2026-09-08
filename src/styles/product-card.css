@@ -1,0 +1,57 @@
+/*
+=========================================================
+ARQUIVO: product-card.css
+RESPONSABILIDADE:
+Define o componente de apresentação de um produto.
+
+BEM:
+- .product-card              -> Block
+- .product-card__title       -> Element
+- .product-card__description -> Element
+- .product-card__price       -> Element
+- .product-card--highlight   -> Modifier
+
+Exemplo:
+<article class="product-card product-card--highlight">
+  <h3 class="product-card__title">Produto</h3>
+  <p class="product-card__description">Descrição</p>
+  <p class="product-card__price">R$ 99,00</p>
+</article>
+=========================================================
+*/
+
+.product-card {
+  padding: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background-color: #f8fafc;
+  box-shadow: 0 3px 8px rgba(17, 24, 39, 0.08);
+  text-align: center;
+}
+
+.product-card--highlight {
+  border-color: #047857;
+  background-color: #ecfdf5;
+}
+
+.product-card__title {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #111827;
+  font-size: 1.3rem;
+}
+
+.product-card__description {
+  margin-top: 10px;
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.product-card__price {
+  margin-top: 18px;
+  margin-bottom: 0;
+  color: #111827;
+  font-size: 1.1rem;
+  font-weight: 700;
+}

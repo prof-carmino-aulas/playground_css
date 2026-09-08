@@ -1,0 +1,43 @@
+/*
+=========================================================
+ARQUIVO: controls.css
+RESPONSABILIDADE:
+Define a área de controles da interface.
+
+BEM:
+- .controls          -> Block
+- .controls__text    -> Element
+- .controls__actions -> Element
+
+Exemplo:
+<div class="controls">
+  <p class="controls__text">Etapa atual</p>
+  <div class="controls__actions">...</div>
+</div>
+=========================================================
+*/
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background-color: #f8fafc;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls__text {
+  margin: 0;
+  color: #374151;
+  font-weight: 700;
+}
+
+.controls__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

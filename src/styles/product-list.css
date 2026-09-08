@@ -1,0 +1,48 @@
+/*
+=========================================================
+ARQUIVO: product-list.css
+RESPONSABILIDADE:
+Define a estrutura da lista de produtos.
+
+BEM:
+- .product-list        -> Block
+- .product-list__intro -> Element
+- .product-list__title -> Element
+- .product-list__grid  -> Element
+
+Cada Element pertence semanticamente ao Block
+.product-list.
+
+Exemplo:
+<section class="product-list">
+  <div class="product-list__intro">...</div>
+  <div class="product-list__grid">...</div>
+</section>
+=========================================================
+*/
+
+.product-list {
+  margin-top: 24px;
+}
+
+.product-list__intro {
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid #818cf8;
+  border-radius: 12px;
+  background-color: #eef2ff;
+}
+
+.product-list__title {
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: #111827;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.product-list__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}

@@ -1,0 +1,67 @@
+/*
+=========================================================
+ARQUIVO: buttons.css
+RESPONSABILIDADE:
+Define os estilos dos botões de navegação e ação.
+
+BEM:
+- .step-button e .action-button são Blocks independentes.
+- .step-button--active é um Modifier de .step-button.
+- .action-button--primary e .action-button--secondary
+  são Modifiers de .action-button.
+
+No BEM, o Modifier representa uma variação de estado,
+aparência ou comportamento de um Block ou Element.
+
+Exemplo:
+<button class="step-button step-button--active">Etapa 1</button>
+<button class="action-button action-button--primary">Avançar</button>
+=========================================================
+*/
+
+.step-button,
+.action-button {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  color: #111827;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.step-button:hover,
+.action-button:hover {
+  background-color: #e0e7ff;
+  border-color: #818cf8;
+}
+
+.step-button--active {
+  background-color: #3730a3;
+  border-color: #3730a3;
+  color: #ffffff;
+}
+
+.action-button {
+  width: auto;
+  text-align: center;
+}
+
+.action-button--primary {
+  background-color: #3730a3;
+  border-color: #3730a3;
+  color: #ffffff;
+}
+
+.action-button--secondary {
+  background-color: #ffffff;
+}
+
+.action-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}

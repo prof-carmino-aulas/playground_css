@@ -1,0 +1,35 @@
+/*
+=========================================================
+ARQUIVO: level.css
+RESPONSABILIDADE:
+Define rótulos visuais de nível, estado ou categoria.
+
+BEM:
+- .level          -> Block
+- .level--primary -> Modifier
+- .level--success -> Modifier
+
+Modifiers utilizam dois hífens:
+bloco--modificador
+
+Exemplo:
+<p class="level level--success">Concluído</p>
+=========================================================
+*/
+
+.level {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.level--primary {
+  color: #3730a3;
+}
+
+.level--success {
+  color: #047857;
+}

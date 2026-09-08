@@ -1,0 +1,31 @@
+/*
+=========================================================
+ARQUIVO: index.css
+RESPONSABILIDADE:
+Arquivo central de importação dos estilos da aplicação.
+
+Ele não define componentes. Sua função é importar os
+arquivos CSS em uma ordem previsível.
+
+No main.tsx, basta utilizar:
+
+import "./styles/index.css";
+
+Assim, todos os estilos abaixo serão carregados.
+=========================================================
+*/
+
+@import "./app.css";
+@import "./global.css";
+@import "./card.css";
+@import "./layout.css";
+@import "./sidebar.css";
+@import "./buttons.css";
+@import "./explanation.css";
+@import "./mock-root.css";
+@import "./page-header.css";
+@import "./level.css";
+@import "./product-list.css";
+@import "./product-card.css";
+@import "./controls.css";
+@import "./responsive.css";
